@@ -21,5 +21,5 @@ def test_list_payments():
     assert response.status_code == 200
     assert response.reason == 'OK'
     assert response_body['payments'][0]['status'] == 'COMPLETED'
-    assert response_body['payments'][0]['approved_money']['amount'] == 150
-    assert response_body['payments'][0]['total_money']['amount'] == 150
+    assert response_body['payments'][0]['approved_money']['amount'] == 100
+    assert response_body['payments'][0]['total_money']['amount'] == 100
